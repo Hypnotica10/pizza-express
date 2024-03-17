@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { Preloader } from "./components";
+import Layout from "./layout/Layout";
+import { Route, Routes } from "react-router-dom";
+import { Home, Blog, Discount, Contact, Policy, Cart } from "./screen";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {isLoading
+        ?
+        (<Preloader setIsLoading={setIsLoading} isLoading={isLoading} />)
+        :
+        (<Layout>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/blog' element={<Blog />} />
+            <Route path='/discount' element={<Discount />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/policy' element={<Policy />} />
+            <Route path='/cart' element={<Cart />} />
+          </Routes>
+        </Layout>)
+      }
+
     </div>
   );
 }

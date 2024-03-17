@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   body {
+      @apply text-[14px] font-montserrat;
+   }
+}
+
+@layer components {
+   .container {
+      width: 100%;
+      max-width: 1470px;
+      padding: 0 15px;
+      margin: 0 auto;
+   }
+}
+
+@layer utilities {
+   
+}
