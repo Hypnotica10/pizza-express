@@ -4,19 +4,25 @@
 
 @layer base {
    body {
-      @apply text-[14px] font-montserrat;
+      @apply text-sm font-montserrat;
    }
 }
 
-@layer components {
+@layer components {}
+
+@layer utilities {
    .container {
       width: 100%;
       max-width: 1470px;
-      padding: 0 15px;
+      padding: 0 16px;
       margin: 0 auto;
    }
-}
 
-@layer utilities {
-   
+   .header-fixed {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      @apply animate-fadeInDown
+   }
 }

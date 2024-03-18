@@ -9,22 +9,17 @@ function App() {
 
   return (
     <div className="App">
-      {isLoading
-        ?
-        (<Preloader setIsLoading={setIsLoading} isLoading={isLoading} />)
-        :
-        (<Layout>
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/blog' element={<Blog />} />
-            <Route path='/discount' element={<Discount />} />
-            <Route path='/contact' element={<Contact />} />
-            <Route path='/policy' element={<Policy />} />
-            <Route path='/cart' element={<Cart />} />
-          </Routes>
-        </Layout>)
-      }
-
+      <Preloader setIsLoading={setIsLoading} isLoading={isLoading} />
+      <Layout>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/blog' element={<Blog />} />
+          <Route path='/discount' element={<Discount />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/policy' element={<Policy />} />
+          <Route path='/cart' element={<Cart />} />
+        </Routes>
+      </Layout>
     </div>
   );
 }

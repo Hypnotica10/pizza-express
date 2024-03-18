@@ -5,25 +5,43 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        'isLoaded': 'fadeOut 500ms ease-in-out 1',
+        'fadeInDown': 'fadeInDown 150ms ease-in-out 1'
+      },
       keyframes: {
-        fade: {
-          '0%': {opacity: 1},
-          '100%' : {opacity: 0}
+        fadeOut: {
+          '0%': { opacity: 1 },
+          '100%': { opacity: 0 }
+        },
+        fadeInDown: {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(-100%)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)'
+          }
         }
+      },
+      colors: {
+        primary: {
+          400: '#c00a27',
+          500: '#a9001b',
+          600: '#850015'
+        },
+        orange: '#ff9c00',
+        yellow: '#fff000'
+      },
+      fontFamily: {
+        montserrat: 'Montserrat, sans-serif',
+        sriracha: 'Sriracha',
+      },
+      zIndex: {
+        '9999': '9999'
       }
     },
-    fontFamily: {
-      montserrat: 'Montserrat, sans-serif',
-      sriracha: 'Sriracha',
-    },
-    colors: {
-      primary: '#c00a2d',
-      orange: '#ff9c00',
-      yellow: '#fff000'
-    },
-    animation: {
-      'isLoaded': 'fade 2000ms ease-in-out 1'
-    }
   },
   plugins: [],
 }

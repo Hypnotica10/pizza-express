@@ -11,7 +11,7 @@ const Preloader = ({ setIsLoading, isLoading }) => {
 
         const timeout = setTimeout(() => {
             setIsLoading(false);
-        }, 7000)
+        }, 5500)
 
         return () => {
             clearTimeout(timeout);
@@ -19,7 +19,7 @@ const Preloader = ({ setIsLoading, isLoading }) => {
         }
     })
     return (
-        <div className={`preloader bg-primary fixed top-0 left-0 w-full h-screen flex items-center justify-center ${isLoading ? '' : 'hidden'}`}>
+        <div className={`preloader z-9999 bg-primary-400 fixed top-0 left-0 w-full h-screen flex items-center justify-center ${isLoading ? '' : 'hidden'}`}>
             <dotlottie-player src="https://lottie.host/4abaeae9-3653-40e5-ab5b-5a2352980ad2/EOvmjU5gIC.json" background="transparent" speed="1" style={{ width: '150px', height: '150px' }} loop autoplay></dotlottie-player>
         </div>
     );
