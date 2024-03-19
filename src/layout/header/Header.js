@@ -6,39 +6,8 @@ import { MdOutlinePhoneIphone } from "react-icons/md";
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { useOnClickOutside } from '../../hook/useOnCLickOutside';
+import { menu } from '../../data';
 
-const menu = [
-    {
-        id: 1,
-        tag: 'trang chủ',
-        path: '/'
-    },
-    {
-        id: 2,
-        tag: 'thực đơn',
-        path: '/#menu',
-    },
-    {
-        id: 3,
-        tag: 'khuyến mãi',
-        path: '/discount'
-    },
-    {
-        id: 4,
-        tag: 'chính sách',
-        path: '/policy'
-    },
-    {
-        id: 5,
-        tag: 'blog',
-        path: '/blog'
-    },
-    {
-        id: 6,
-        tag: 'liên hệ',
-        path: '/contact'
-    }
-]
 const Menu = ({ menu, classList, classItem, classLink, navigateToMenu }) => {
     return (
         <ul className={classList}>
@@ -56,8 +25,8 @@ const Menu = ({ menu, classList, classItem, classLink, navigateToMenu }) => {
 const MobileMenu = ({ menuActive, navigateToMenu }) => {
     return (
         <div className={`${menuActive ? 'h-[330px]' : 'h-0'} mobile-menu absolute bg-primary-400 w-full top-full left-0 overflow-hidden transition-all`}>
-            <div className='container py-4'>
-                <div className='flex flex-col items-center justify-center'>
+            <div className='container'>
+                <div className='flex flex-col items-center justify-center mt-4'>
                     <span className='text-xs'>Gọi điện ngay - Ship liền tay (24/7)</span>
                     <a href='tel:02436888777' className='text-yellow flex items-center text-xl font-semibold'>
                         <MdOutlinePhoneIphone />
@@ -107,10 +76,16 @@ const Header = () => {
         const handleOnScroll = () => {
             const newPos = window.scrollY;
             const header = document.querySelector('header');
-            if (newPos >= header.scrollHeight && headerMenu && newPos < pos) {
-                headerMenu.classList.add('header-fixed');
+            if (newPos >= header.scrollHeight) {
+                if (newPos < pos) {
+                    headerMenu.classList.add('animate-fadeInDown', 'header-fixed');
+                    headerMenu.classList.remove('animate-fadeOutUp');
+                } else {
+                    headerMenu.classList.remove('animate-fadeInDown');
+                    headerMenu.classList.add('animate-fadeOutUp');
+                }
             } else {
-                headerMenu.classList.remove('header-fixed');
+                headerMenu.classList.remove('header-fixed', 'animate-fadeOutUp', 'animate-fadeInDown');
             }
             pos = newPos;
         }

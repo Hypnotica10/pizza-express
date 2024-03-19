@@ -7,7 +7,11 @@ module.exports = {
     extend: {
       animation: {
         'isLoaded': 'fadeOut 500ms ease-in-out 1',
-        'fadeInDown': 'fadeInDown 150ms ease-in-out 1'
+        'fadeInDown': 'fadeInDown 250ms ease-in-out 1',
+        'fadeOutUp': 'fadeOutUp 250ms ease-in-out 1 forwards'
+      },
+      backgroundImage: {
+        'footer': 'url(/src/assets/footer_bg.jpg)'
       },
       keyframes: {
         fadeOut: {
@@ -22,6 +26,16 @@ module.exports = {
           '100%': {
             opacity: '1',
             transform: 'translateY(0)'
+          }
+        },
+        fadeOutUp: {
+          '0%': {
+            opacity: '1',
+            transform: 'translateY(0)'
+          },
+          '100%': {
+            opacity: '0',
+            transform: 'translateY(-100%)'
           }
         }
       },
@@ -43,5 +57,7 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+
+  ],
 }
