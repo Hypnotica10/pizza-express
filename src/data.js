@@ -57,6 +57,10 @@ export const listAgency = [
 export const carousel = [
     {
         id: 1,
-        imageUrl: ''
+        imageUrl: 'banner1.png'
+    },
+    {
+        id: 2,
+        imageUrl: 'banner2.jpg'
     }
 ]
