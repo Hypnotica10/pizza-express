@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -46,7 +47,8 @@ module.exports = {
           600: '#850015'
         },
         orange: '#ff9c00',
-        yellow: '#fff000'
+        yellow: '#fff000',
+        gray: '#f6f6f6'
       },
       fontFamily: {
         montserrat: 'Montserrat, sans-serif',
@@ -55,6 +57,10 @@ module.exports = {
       zIndex: {
         '9999': '9999'
       }
+    },
+    screens: {
+      'xs': '572px',
+      ...defaultTheme.screens,
     },
   },
   plugins: [

@@ -29,24 +29,26 @@ const Banner = () => {
     }, []);
     return (
         <section className='banner cursor-pointer'>
-            <swiper-container
-                init='false'
-                ref={swiperRef}
-                pagination-clickable="true"
-                autoplay-delay='4000'
-                speed='800'
-            >
-                {carousel && carousel.map((item) => (
-                    <swiper-slide class=''>
-                        <div
-                            key={item.id}
-                            className='image'
-                        >
-                            <img src={require(`../../assets/${item.imageUrl}`)} alt='' className='sm:h-[450px] h-80 object-cover' />
-                        </div>
-                    </swiper-slide>
-                ))}
-            </swiper-container>
+            <div className='banner-slide'>
+                <swiper-container
+                    init='false'
+                    ref={swiperRef}
+                    pagination-clickable="true"
+                    autoplay-delay='4000'
+                    speed='800'
+                >
+                    {carousel && carousel.map((item) => (
+                        <swiper-slide key={item.id} class=''>
+                            <div
+                                key={item.id}
+                                className='image'
+                            >
+                                <img src={require(`../../assets/${item.imageUrl}`)} alt='' className='sm:h-[450px] h-80 object-cover w-full' />
+                            </div>
+                        </swiper-slide>
+                    ))}
+                </swiper-container>
+            </div>
         </section>
     );
 };
