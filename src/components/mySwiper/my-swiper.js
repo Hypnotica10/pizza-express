@@ -22,6 +22,7 @@ export function Swiper(props) {
 
     // initialize swiper
     swiperRef.current.initialize();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

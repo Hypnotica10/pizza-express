@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import Logo from '../../assets/logo.png';
+import Logo from '../../assets/image/logo.png';
 import { RiShoppingBasket2Line, RiMenuLine } from "react-icons/ri";
 import { MdArrowDropDown } from "react-icons/md";
 import { MdOutlinePhoneIphone } from "react-icons/md";

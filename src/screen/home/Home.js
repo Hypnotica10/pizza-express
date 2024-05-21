@@ -1,11 +1,12 @@
 import React from 'react';
-import { Banner, RecentlyOrder } from '../../components';
+import { Banner, HomeMenu, RecentlyOrder } from '../../components';
 
 const Home = () => {
     return (
         <>
             <Banner />
             <RecentlyOrder />
+            <HomeMenu />
         </>
     );
 };

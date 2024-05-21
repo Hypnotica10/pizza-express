@@ -312,3 +312,188 @@ export const recentlyOrder = [
         time: '6p trước'
     }
 ]
+
+export const categories = [
+    {
+        id: 1,
+        classification: 'pizza',
+        icon: 'icon_pizza.png',
+        iconActive: 'icon_pizza_active.png',
+        products: [
+            {
+                id: 1,
+                name: 'beefy pizza',
+                price: [
+                    {
+                        size: 's',
+                        unitPrice: '90000'
+                    },
+                    {
+                        size: 'm',
+                        unitPrice: '120000'
+                    },
+                    {
+                        size: 'l',
+                        unitPrice: '150000'
+                    },
+                ]
+            }
+        ]
+    },
+    {
+        id: 2,
+        classification: 'bbq',
+        icon: 'icon_bbq.png',
+        iconActive: 'icon_bbq_active.png',
+        products: [
+            {
+                id: 1,
+                name: 'beefy pizza',
+                price: [
+                    {
+                        size: 's',
+                        unitPrice: '90000'
+                    },
+                    {
+                        size: 'm',
+                        unitPrice: '120000'
+                    },
+                    {
+                        size: 'l',
+                        unitPrice: '150000'
+                    },
+                ]
+            }
+        ]
+    },
+    {
+        id: 3,
+        classification: 'spaghetti',
+        icon: 'icon_spaghetti.png',
+        iconActive: 'icon_spaghetti_active.png',
+        products: [
+            {
+                id: 1,
+                name: 'beefy pizza',
+                price: [
+                    {
+                        size: 's',
+                        unitPrice: '90000'
+                    },
+                    {
+                        size: 'm',
+                        unitPrice: '120000'
+                    },
+                    {
+                        size: 'l',
+                        unitPrice: '150000'
+                    },
+                ]
+            }
+        ]
+    },
+    {
+        id: 4,
+        classification: 'starter',
+        icon: 'icon_starter.png',
+        iconActive: 'icon_starter_active.png',
+        products: [
+            {
+                id: 1,
+                name: 'beefy pizza',
+                price: [
+                    {
+                        size: 's',
+                        unitPrice: '90000'
+                    },
+                    {
+                        size: 'm',
+                        unitPrice: '120000'
+                    },
+                    {
+                        size: 'l',
+                        unitPrice: '150000'
+                    },
+                ]
+            }
+        ]
+    },
+    {
+        id: 5,
+        classification: 'drink',
+        icon: 'icon_drink.png',
+        iconActive: 'icon_drink_active.png',
+        products: [
+            {
+                id: 1,
+                name: 'beefy pizza',
+                price: [
+                    {
+                        size: 's',
+                        unitPrice: '90000'
+                    },
+                    {
+                        size: 'm',
+                        unitPrice: '120000'
+                    },
+                    {
+                        size: 'l',
+                        unitPrice: '150000'
+                    },
+                ]
+            }
+        ]
+    },
+    {
+        id: 6,
+        classification: 'combo',
+        icon: 'icon_combo.png',
+        iconActive: 'icon_combo_active.png',
+        products: [
+            {
+                id: 1,
+                name: 'beefy pizza',
+                price: [
+                    {
+                        size: 's',
+                        unitPrice: '90000'
+                    },
+                    {
+                        size: 'm',
+                        unitPrice: '120000'
+                    },
+                    {
+                        size: 'l',
+                        unitPrice: '150000'
+                    },
+                ]
+            }
+        ]
+    },
+    {
+        id: 7,
+        classification: 'other',
+        icon: 'icon_combo.png',
+        iconActive: 'icon_combo_active.png',
+        products: [
+            {
+                id: 1,
+                name: 'beefy pizza',
+                price: [
+                    {
+                        size: 's',
+                        unitPrice: '90000'
+                    },
+                    {
+                        size: 'm',
+                        unitPrice: '120000'
+                    },
+                    {
+                        size: 'l',
+                        unitPrice: '150000'
+                    },
+                ]
+            }
+        ]
+    },
+]

@@ -1,8 +1,8 @@
 import React from 'react';
-import Logo from '../../assets/logo.png';
+import Logo from '../../assets/image/logo.png';
 import { Link } from 'react-router-dom';
-import Certificated from '../../assets/bct.png';
-import Wave from '../../assets/wave.png'
+import Certificated from '../../assets/image/bct.png';
+import Wave from '../../assets/image/wave.png'
 import { listAgency } from '../../data';
 import { Agency } from '../../components';
 

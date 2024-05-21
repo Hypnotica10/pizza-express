@@ -12,7 +12,7 @@ module.exports = {
         'fadeOutUp': 'fadeOutUp 250ms ease-in-out 1 forwards'
       },
       backgroundImage: {
-        'footer': 'url(/src/assets/footer_bg.jpg)'
+        'footer': 'url(/src/assets/image/footer_bg.jpg)'
       },
       keyframes: {
         fadeOut: {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { recentlyOrder } from '../../data';
-import PizzaGif from '../../assets/gif-pizza.gif';
+import PizzaGif from '../../assets/image/gif-pizza.gif';
 import PropTypes from 'prop-types';
 import { register } from "swiper/element/bundle";
 import { SwiperSlide, Swiper } from '../mySwiper/my-swiper';
@@ -51,7 +51,7 @@ const RecentlyOrder = () => {
                             },
                         }}
                         autoplay={{
-                            delay: 3000,
+                            delay: 4000,
                             disableOnInteraction: false,
                         }}
                     >
