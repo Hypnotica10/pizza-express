@@ -48,15 +48,22 @@ module.exports = {
         },
         orange: '#ff9c00',
         yellow: '#fff000',
-        gray: '#f6f6f6'
+        gray: {
+          400: '#f6f6f6',
+          500: '#e2e2e2',
+          600: '#959595'
+        },
       },
       fontFamily: {
         montserrat: 'Montserrat, sans-serif',
         sriracha: 'Sriracha',
       },
+      fontSize: {
+        xs: '12px'
+      },
       zIndex: {
         '9999': '9999'
-      }
+      },
     },
     screens: {
       'xs': '572px',

@@ -7,11 +7,11 @@ const HomeMenu = () => {
     return (
         <section className='home-menu py-16' id='menu'>
             <div className='container'>
-                <h3 className='flex items-center justify-center mb-5 overflow-x-hidden'>
+                <h2 className='flex items-center justify-center mb-5 overflow-x-hidden'>
                     <img src={Line} alt='' className='shrink' />
                     <span className='text-lg px-5 font-semibold shrink-0'>Thực đơn</span>
                     <img src={Line} alt='' className='shrink' />
-                </h3>
+                </h2>
                 <Tab active={1}>
                     {categories && categories.map((item) => (
                         <TabPane
