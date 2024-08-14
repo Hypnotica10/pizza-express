@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    body {
+        @apply text-sm font-montserrat;
+    }
+}
+
+@layer components {
+    .dropdown-active {
+        overflow: auto;
+        opacity: 1;
+        visibility: visible;
+    }
+
+}
+
+@layer utilities {
+    .container {
+        width: 100%;
+        max-width: 1470px;
+        padding: 0 16px;
+        margin: 0 auto;
+    }
+
+    .header-fixed {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+    }
+}
