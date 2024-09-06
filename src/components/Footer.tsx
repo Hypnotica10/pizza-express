@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import { Agency, Icon, Image } from "../components";
+import { Agency } from "../components";
 import { listAgency } from "../data";
+import { Icon, Image } from "../commons";
 
 const Footer = () => {
   return (

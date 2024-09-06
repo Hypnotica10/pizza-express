@@ -12,7 +12,7 @@ export default {
         'fadeOutUp': 'fadeOutUp 250ms ease-in-out 1 forwards'
       },
       backgroundImage: {
-        'footer': 'url(/src/assets/footer_bg.jpg)'
+        'footer': 'url(https://res.cloudinary.com/dwjypnbvd/image/upload/f_auto/q_auto/v1/pizza-express/footer?_a=DAJAUVWIZAA0)'
       },
       keyframes: {
         fadeOut: {

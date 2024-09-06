@@ -1,15 +1,7 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import Icon from "./Icon";
+import Icon from "../commons/Icon";
 
-const Agency = ({
-  listAgency,
-  classList,
-  classItem,
-  classLink,
-  classOrdinalNumber,
-  classTopContent,
-}: {
+interface IAgencyProps {
   listAgency: {
     id: number;
     name: string;
@@ -20,7 +12,16 @@ const Agency = ({
   classLink: string;
   classOrdinalNumber: string;
   classTopContent: string;
-}) => {
+}
+
+const Agency = ({
+  listAgency,
+  classList,
+  classItem,
+  classLink,
+  classOrdinalNumber,
+  classTopContent,
+}: IAgencyProps) => {
   return (
     <div className={classList}>
       {listAgency &&
